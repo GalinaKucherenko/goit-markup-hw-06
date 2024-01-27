@@ -170,9 +170,10 @@ img {
 
 .main-title-frame {
     background: #2E2F42;
-    padding: 188px 0;
+    /* padding: 188px 0; */
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
-    url(../images/main.jpg);
+    url(../images/main_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -180,16 +181,31 @@ img {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .main-title-frame {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+    url(../images/main_mob2x.jpg);
+    }
+}
+
+
 .main-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    /* line-height: 1.07; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    max-width: 288px;
     margin: 0 auto;
 }
+
 .main-btn {
     color: #FFF;
     display: block;
@@ -702,6 +718,27 @@ img {
     .container {
         max-width: 768px;
     }
+}
+
+    /* main */
+    .main-title-frame {
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/main_tablet.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .main-title-frame {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+            url(../images/main_tablet2x.jpg);
+        }
+    }
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
 
     /* benefits */
     .benefits-list {
@@ -741,6 +778,19 @@ img {
         padding: 0 15px;
     }
 
+    /* Main */
+    .main-title-frame {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/main.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .main-title-frame {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/main2x.jpg);
+        }
+    }
     /* benefits */
     .benefits {
         padding-top: 120px;
